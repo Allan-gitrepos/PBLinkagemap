@@ -16,7 +16,46 @@ mod_dataview_ui <- function(id){
                          "text/comma-separated-values,
                        .csv")),
 
-      DTOutput(ns("linkage_input"))
+      DTOutput(ns("linkage_input")),
+
+
+    fluidRow(
+
+
+      bs4Dash::actionButton(ns("generate"), "Generate PDF",status="success"),
+
+
+
+    ),
+
+    br(),
+
+
+    fluidRow(
+
+      box(
+        title = "Linkage map",
+        closable = F,
+        solidHeader = T,
+        width = 12,
+        height = 500,
+        status = "warning",
+
+        collapsible = TRUE,
+
+        uiOutput(ns("pdfview")),
+
+
+        label = boxLabel(
+          text = 'new',
+          status = "danger"
+        ),
+        dropdownMenu = boxDropdown(
+          boxDropdownItem("Link to Github", href = "https://github.com/Allan-gitrepos"),
+          boxDropdownItem("Link to PBperfect", href = "https://allanbiotools.shinyapps.io/pbperfect/")
+        )
+      )
+    )
 
   )
 }
@@ -44,10 +83,24 @@ mod_dataview_server <- function(id){
 
     output$linkage_input <- renderDT({
       validate(
-        need(data_linkage(),"Kindly upload the data file")
+        need(data_linkage(),"")
       )
       data_linkage()
+
     },options = list(scrollX = TRUE))
+
+
+    observeEvent(input$generate, {
+        output$pdfview <- renderUI({
+
+          linkmap(data_linkage())
+
+        tags$iframe(style="height:600px; width:100%", src=("www/Linkagemap.pdf"))
+        })
+      })
+
+
+
 
   })
 }

@@ -78,7 +78,15 @@
     <main>
         <div class="pbperfect-container">
             <h1 class="pbperfect-heading">Data Format</h1>
-            <p class="pbperfect-text">PBlinkagemap requires your data to be in a specific format in order to perform the QTL analysis and mapping. The following table shows the required format:</p>
+
+<button>
+        <a href="https://mega.nz/file/tTwgxI5A#K9nFNnvNjlOuNHfK7QiP2-vGs3Ygh4wsIjQwtqRGzio" download>
+            Download Example Data
+        </a>
+    </button>
+
+<br></br>
+            <p class="pbperfect-text">PBlinkagemap requires your data to be in a specific format in order to plot the Linkage Map. The following table shows the required format:</p>
 
 
 
@@ -98,17 +106,17 @@
                     </tr>
                     <tr>
                         <td>Chromosome</td>
-                        <td>The chromosome number.</td>
-                        <td>Integer</td>
+                        <td>The chromosome number or Linkage group.</td>
+                        <td>String</td>
                     </tr>
                     <tr>
                         <td>Position</td>
                         <td>The position of the marker on the chromosome in centimorgans (cM).</td>
-                        <td>Float</td>
+                        <td>Numeric</td>
                     </tr>
                     <tr>
-                        <td>Trait</td>
-                        <td>The trait that you are interested in mapping.</td>
+                        <td>Numeric</td>
+                        <td>1 - For non-significant and 0 - For singificant (The markers with values 1 will be highlighted as QTLs).</td>
                         <td>Float</td>
                     </tr>
                 </tbody>

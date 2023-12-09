@@ -1,0 +1,12 @@
+name: PBLinkagemap
+title: PBLinkagemap
+username: allanbiotools1
+account: allanbiotools1
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10759483
+bundleId: 8028894
+url: https://allanbiotools1.shinyapps.io/PBLinkagemap/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

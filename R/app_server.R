@@ -12,7 +12,6 @@ app_server <- function(input, output, session) {
   })
 
   mod_Home_server("Home_1")
-  mod_Lmap_server("Lmap_1")
   mod_dataview_server("dataview_1")
   mod_dataformat_server("dataformat_1")
 }

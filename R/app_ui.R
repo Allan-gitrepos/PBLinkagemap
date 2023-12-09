@@ -8,7 +8,7 @@
 #' @import shinyjs
 #'
 #' @noRd
-app_ui <- function(request) {
+app_ui <- function(request) {bootstrapPage(
   tagList(
 
     # Leave this function for adding external resources
@@ -49,16 +49,11 @@ app_ui <- function(request) {
 
 
             menuItem(
-              "View data",
-              tabName = "dataview",
+              "Linkagemap",
+              tabName = "linkagemap",
               icon = htmltools::browsable(tags$i(class ="fa-solid fa-caret-right"))
-            ),
-
-            menuItem(
-              "Linkage Map",
-              tabName = "linmap",
-              icon = icon("chart-line")
             )
+
           )
         ),
         controlbar = dashboardControlbar(
@@ -110,14 +105,8 @@ app_ui <- function(request) {
             ),
 
             bs4TabItem(
-              tabName = "dataview",
+              tabName = "linkagemap",
               mod_dataview_ui("dataview_1")
-            ),
-
-
-            bs4TabItem(
-              tabName = "linmap",
-              mod_Lmap_ui("Lmap_1")
             )
 
 
@@ -134,6 +123,7 @@ app_ui <- function(request) {
 
     )
   )
+)
 
 }
 
