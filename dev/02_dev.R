@@ -20,7 +20,7 @@ attachment::att_amend_desc()
 
 ## Add modules ----
 ## Create a module infrastructure in R/
-golem::add_module(name = "name_of_module1", with_test = TRUE) # Name of the module
+golem::add_module(name = "dataview", with_test = TRUE) # Name of the module
 golem::add_module(name = "name_of_module2", with_test = TRUE) # Name of the module
 
 ## Add helper functions ----
@@ -94,3 +94,5 @@ usethis::use_gitlab_ci()
 # You're now set! ----
 # go to dev/03_deploy.R
 rstudioapi::navigateToFile("dev/03_deploy.R")
+
+usethis::use_package("DT")

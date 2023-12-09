@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBlinkagemap Data Format</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0B69A9;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .pbperfect-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .pbperfect-subtitle {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .pbperfect-container {
+            background-color: #f7f7f7;
+            border: 1px solid #B0B0B0;
+            padding: 20px;
+            margin: 0 auto;
+            width: 80%;
+            border-radius: 5px;
+        }
+
+        .pbperfect-heading {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #0B69A9;
+        }
+
+        .pbperfect-text {
+            line-height: 1.5;
+            margin-bottom: 1em;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #B0B0B0;
+            padding: 8px;
+        }
+
+        footer {
+            background-color: #f7f7f7;
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid #B0B0B0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="pbperfect-title">PBlinkagemap Data Format</h1>
+    </header>
+    <main>
+        <div class="pbperfect-container">
+            <h1 class="pbperfect-heading">Data Format</h1>
+            <p class="pbperfect-text">PBlinkagemap requires your data to be in a specific format in order to perform the QTL analysis and mapping. The following table shows the required format:</p>
+
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Description</th>
+                        <th>Data Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marker</td>
+                        <td>The name of the marker.</td>
+                        <td>String</td>
+                    </tr>
+                    <tr>
+                        <td>Chromosome</td>
+                        <td>The chromosome number.</td>
+                        <td>Integer</td>
+                    </tr>
+                    <tr>
+                        <td>Position</td>
+                        <td>The position of the marker on the chromosome in centimorgans (cM).</td>
+                        <td>Float</td>
+                    </tr>
+                    <tr>
+                        <td>Trait</td>
+                        <td>The trait that you are interested in mapping.</td>
+                        <td>Float</td>
+                    </tr>
+                </tbody>
+            </table>
+
+<br></br>
+
+<img src="www/format.png" alt="Image" class="pbperfect-image">
+
+            <p class="pbperfect-text">Please note that all columns in the table must be present and in the correct order. You can save your data in a CSV file and then import it into PBlinkagemap.</p>
+        </div>
+    </main>
+    <footer class="pbperfect-footer">
+        <p>&copy; 2023 PBlinkagemap</p>
+    </footer>
+</body>
+</html>
