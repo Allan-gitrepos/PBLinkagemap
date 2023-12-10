@@ -1,50 +1,21 @@
+PBLinkagemap
+PBLinkagemap is a web application for interactive creation of linkage maps and identification of quantitative trait loci (QTLs) from genomic and phenotypic datasets.
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+Access the app here: allanbiotools1.shinyapps.io/PBLinkagemap/
 
-# PBLinkagemap
+Overview
+PBLinkagemap provides an easy-to-use graphical interface for QTL mapping. Users can upload their own datasets and configure parameters to:
 
-<!-- badges: start -->
-<!-- badges: end -->
+Construct linkage maps based on recombination fractions and LOD scores
+Identify QTLs associated with traits of interest
+Visualize QTL locations and candidate genes
+Explore marker-trait associations through interactive charts
+The goal is to streamline genetic mapping of quantitative traits from experimental or breeding populations. Both bi-parental and multi-parent populations are supported.
 
-The goal of PBLinkagemap is to …
+Usage
+Please see the Usage Guide on the web app homepage for details on data formats, parameters, and usage instructions.
 
-## Installation
+Several example datasets are also provided to get started quickly.
 
-You can install the development version of PBLinkagemap like so:
-
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
-```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(PBLinkagemap)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+Contact
+Please contact the lead developer Allan Biri at email with any questions, issues, or suggestions for PBLinkagemap. We welcome feedback to improve and expand functionality!
